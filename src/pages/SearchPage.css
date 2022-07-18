@@ -14,10 +14,54 @@
     margin-right: 50px;
 }
 .searchPage_headerbody>.search>.search_input{
-
-display:flex;
 margin-top: 0;
-width:40vw;
+width:unset;
 margin:unset;
 max-width:unset;
+}
+.searchPage_options{
+    display:flex;
+    align-items:center;
+    color:gray;
+
+    
+}
+.searchPage_options a,.searchPage_optionsRight a{
+    text-decoration:none;
+    color:gray
+}
+.searchPage_optionsLeft,.searchPage_optionsRight{
+    display:flex;
+    color:gray;
+    align-items:center;
+    justify-content:space-between;
+
+
+}
+.searchPage_optionsRight,.searchPage_optionsLeft{
+    display:flex;
+}
+.searchPage_optionsRight{
+    margin-left:80px;
+}
+.searchPage_option{
+    display:flex;
+    align-items:center;
+    margin-right: 20px;
+}
+.searchPage_option a{
+    margin-left: 5px;
+}
+.searchPage_result{
+    margin:40px 0;
+}
+.searchPage_resultCount{
+    color:#70757a;
+    font-size:14px;
+}
+.searchPage_results{
+    max-width: 650px;
+    margin-top:20px;
+    margin-left:240px;
+    margin-bottom: 100px;
 }

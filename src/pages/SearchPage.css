@@ -48,7 +48,7 @@ max-width:unset;
     display:flex;
     align-items:center;
     margin-right: 20px;
-}
+} 
 .searchPage_option a{
     margin-left: 5px;
 }
@@ -64,4 +64,16 @@ max-width:unset;
     margin-top:20px;
     margin-left:240px;
     margin-bottom: 100px;
+}
+.searchPage_resultTitle{
+    text-decoration: none;
+}
+.searchPage_resultTitle:hover{
+    text-decoration:underline;
+}
+.searchPage_resultTitle>h2{
+    font-weight:500;
+}
+.searchPage_resultSnippet{
+    margin-top:10px;
 }

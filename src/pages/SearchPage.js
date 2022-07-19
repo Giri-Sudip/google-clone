@@ -11,9 +11,9 @@ import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import RoomIcon from '@mui/icons-material/Room';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 const SearchPage = () => {
-  const [{ term }, dispatch] = useStateValue();
+  const [{ term='tesla' }, dispatch] = useStateValue();
   const { data } = useGoogleSearch(term);
-  // console.log(data);
+  console.log(data);
   return (
     <div className="searchPage">
       <div className="searchPage_header">
@@ -74,8 +74,11 @@ const SearchPage = () => {
           </p>
           {data?.items.map(item => (
             <div className="searchPage_result">
-              <a href={item.Link}>
+              <a href={item.link}>
                 {item.displayLink}
+              </a>
+              <a className="searchPage_resultTitle" href={item.link}>
+                <h2>{item.title}</h2>
               </a>
               <p className="searchPage_resultSnippet">
                 {item.snippet}
